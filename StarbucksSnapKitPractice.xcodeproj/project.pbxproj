@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4EEC851329546D8400AF8202 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC851229546D8400AF8202 /* PayViewController.swift */; };
+		4EEC851529546DA900AF8202 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC851429546DA900AF8202 /* OrderViewController.swift */; };
+		4EEC851729546DC600AF8202 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC851629546DC600AF8202 /* ShopViewController.swift */; };
+		4EEC851929546DDE00AF8202 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC851829546DDE00AF8202 /* OtherViewController.swift */; };
+		4EEC851B29548F8D00AF8202 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC851A29548F8D00AF8202 /* TabBarController.swift */; };
+		4EF162FD29506E3A00A3BA97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF162FC29506E3A00A3BA97 /* AppDelegate.swift */; };
+		4EF162FF29506E3A00A3BA97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF162FE29506E3A00A3BA97 /* SceneDelegate.swift */; };
+		4EF1630129506E3A00A3BA97 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF1630029506E3A00A3BA97 /* HomeViewController.swift */; };
+		4EF1630629506E3A00A3BA97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EF1630529506E3A00A3BA97 /* Assets.xcassets */; };
+		4EF1630929506E3A00A3BA97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EF1630729506E3A00A3BA97 /* LaunchScreen.storyboard */; };
+		F6661CB17EC25BF49BD71065 /* Pods_StarbucksSnapKitPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5DBA5C35F67AB0442CE8A1 /* Pods_StarbucksSnapKitPractice.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2261836F92199218A7B7B1EA /* Pods-StarbucksSnapKitPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarbucksSnapKitPractice.release.xcconfig"; path = "Target Support Files/Pods-StarbucksSnapKitPractice/Pods-StarbucksSnapKitPractice.release.xcconfig"; sourceTree = "<group>"; };
+		4EEC851229546D8400AF8202 /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
+		4EEC851429546DA900AF8202 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		4EEC851629546DC600AF8202 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		4EEC851829546DDE00AF8202 /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
+		4EEC851A29548F8D00AF8202 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		4EF162F929506E3A00A3BA97 /* StarbucksSnapKitPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarbucksSnapKitPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EF162FC29506E3A00A3BA97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4EF162FE29506E3A00A3BA97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4EF1630029506E3A00A3BA97 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4EF1630529506E3A00A3BA97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4EF1630829506E3A00A3BA97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4EF1630A29506E3A00A3BA97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F5DBA5C35F67AB0442CE8A1 /* Pods_StarbucksSnapKitPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarbucksSnapKitPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DD1B16A940D5863FF30E9BA /* Pods-StarbucksSnapKitPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarbucksSnapKitPractice.debug.xcconfig"; path = "Target Support Files/Pods-StarbucksSnapKitPractice/Pods-StarbucksSnapKitPractice.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4EF162F629506E3A00A3BA97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6661CB17EC25BF49BD71065 /* Pods_StarbucksSnapKitPractice.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4EF162F029506E3A00A3BA97 = {
+			isa = PBXGroup;
+			children = (
+				4EF162FB29506E3A00A3BA97 /* StarbucksSnapKitPractice */,
+				4EF162FA29506E3A00A3BA97 /* Products */,
+				D1372240D0592C3EBACAC6B5 /* Pods */,
+				C6567C815A38EE919F9B38F1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4EF162FA29506E3A00A3BA97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4EF162F929506E3A00A3BA97 /* StarbucksSnapKitPractice.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4EF162FB29506E3A00A3BA97 /* StarbucksSnapKitPractice */ = {
+			isa = PBXGroup;
+			children = (
+				4EF162FC29506E3A00A3BA97 /* AppDelegate.swift */,
+				4EF162FE29506E3A00A3BA97 /* SceneDelegate.swift */,
+				4EF1630029506E3A00A3BA97 /* HomeViewController.swift */,
+				4EEC851229546D8400AF8202 /* PayViewController.swift */,
+				4EEC851429546DA900AF8202 /* OrderViewController.swift */,
+				4EEC851629546DC600AF8202 /* ShopViewController.swift */,
+				4EEC851829546DDE00AF8202 /* OtherViewController.swift */,
+				4EF1630529506E3A00A3BA97 /* Assets.xcassets */,
+				4EF1630729506E3A00A3BA97 /* LaunchScreen.storyboard */,
+				4EF1630A29506E3A00A3BA97 /* Info.plist */,
+				4EEC851A29548F8D00AF8202 /* TabBarController.swift */,
+			);
+			path = StarbucksSnapKitPractice;
+			sourceTree = "<group>";
+		};
+		C6567C815A38EE919F9B38F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F5DBA5C35F67AB0442CE8A1 /* Pods_StarbucksSnapKitPractice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1372240D0592C3EBACAC6B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DD1B16A940D5863FF30E9BA /* Pods-StarbucksSnapKitPractice.debug.xcconfig */,
+				2261836F92199218A7B7B1EA /* Pods-StarbucksSnapKitPractice.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4EF162F829506E3A00A3BA97 /* StarbucksSnapKitPractice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EF1630D29506E3A00A3BA97 /* Build configuration list for PBXNativeTarget "StarbucksSnapKitPractice" */;
+			buildPhases = (
+				ED4A60F7EECD18D09086B784 /* [CP] Check Pods Manifest.lock */,
+				4EF162F529506E3A00A3BA97 /* Sources */,
+				4EF162F629506E3A00A3BA97 /* Frameworks */,
+				4EF162F729506E3A00A3BA97 /* Resources */,
+				E465DAE91235C2406B241EC7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StarbucksSnapKitPractice;
+			productName = StarbucksSnapKitPractice;
+			productReference = 4EF162F929506E3A00A3BA97 /* StarbucksSnapKitPractice.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4EF162F129506E3A00A3BA97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					4EF162F829506E3A00A3BA97 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 4EF162F429506E3A00A3BA97 /* Build configuration list for PBXProject "StarbucksSnapKitPractice" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4EF162F029506E3A00A3BA97;
+			productRefGroup = 4EF162FA29506E3A00A3BA97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4EF162F829506E3A00A3BA97 /* StarbucksSnapKitPractice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4EF162F729506E3A00A3BA97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EF1630929506E3A00A3BA97 /* LaunchScreen.storyboard in Resources */,
+				4EF1630629506E3A00A3BA97 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E465DAE91235C2406B241EC7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StarbucksSnapKitPractice/Pods-StarbucksSnapKitPractice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StarbucksSnapKitPractice/Pods-StarbucksSnapKitPractice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StarbucksSnapKitPractice/Pods-StarbucksSnapKitPractice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED4A60F7EECD18D09086B784 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StarbucksSnapKitPractice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4EF162F529506E3A00A3BA97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EF1630129506E3A00A3BA97 /* HomeViewController.swift in Sources */,
+				4EEC851B29548F8D00AF8202 /* TabBarController.swift in Sources */,
+				4EEC851529546DA900AF8202 /* OrderViewController.swift in Sources */,
+				4EEC851929546DDE00AF8202 /* OtherViewController.swift in Sources */,
+				4EEC851729546DC600AF8202 /* ShopViewController.swift in Sources */,
+				4EF162FD29506E3A00A3BA97 /* AppDelegate.swift in Sources */,
+				4EF162FF29506E3A00A3BA97 /* SceneDelegate.swift in Sources */,
+				4EEC851329546D8400AF8202 /* PayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4EF1630729506E3A00A3BA97 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4EF1630829506E3A00A3BA97 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4EF1630B29506E3A00A3BA97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4EF1630C29506E3A00A3BA97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4EF1630E29506E3A00A3BA97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DD1B16A940D5863FF30E9BA /* Pods-StarbucksSnapKitPractice.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7G7F9UTVD7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StarbucksSnapKitPractice/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DooWoon.StarbucksSnapKitPractice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4EF1630F29506E3A00A3BA97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2261836F92199218A7B7B1EA /* Pods-StarbucksSnapKitPractice.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7G7F9UTVD7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StarbucksSnapKitPractice/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DooWoon.StarbucksSnapKitPractice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4EF162F429506E3A00A3BA97 /* Build configuration list for PBXProject "StarbucksSnapKitPractice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EF1630B29506E3A00A3BA97 /* Debug */,
+				4EF1630C29506E3A00A3BA97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EF1630D29506E3A00A3BA97 /* Build configuration list for PBXNativeTarget "StarbucksSnapKitPractice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EF1630E29506E3A00A3BA97 /* Debug */,
+				4EF1630F29506E3A00A3BA97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4EF162F129506E3A00A3BA97 /* Project object */;
+}
