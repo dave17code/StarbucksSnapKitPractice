@@ -113,14 +113,41 @@ class HomeViewController: UIViewController {
         $0.image = UIImage(named: "bell")
     }
     
-    
-    
     let view2 = UIView().then {
         $0.backgroundColor = .clear
     }
     
+    let imageView4 = UIImageView().then {
+        $0.image = UIImage(named: "banner1")
+    }
+    
+    let imageView5 = UIImageView().then {
+        $0.image = UIImage(named: "banner2")
+    }
+    
+    let imageView6 = UIImageView().then {
+        $0.image = UIImage(named: "banner3")
+    }
+    
     let view3 = UIView().then {
-        $0.backgroundColor = .cyan
+        $0.backgroundColor = .white
+    }
+    
+    let stackView5 = UIStackView().then {
+        $0.axis = .horizontal
+        $0.spacing = 100
+    }
+    
+    let label7 = UILabel().then {
+        $0.font = .boldSystemFont(ofSize: 20.5)
+        $0.textColor = .black
+        $0.text = "What's New"
+    }
+    
+    let label8 = UILabel().then {
+        $0.font = .systemFont(ofSize: 15, weight: .regular)
+        $0.textColor = .systemGreen
+        $0.text = "See all"
     }
     
     override func viewDidLoad() {
@@ -131,6 +158,9 @@ class HomeViewController: UIViewController {
         scrollView.addSubview(contentView)
         contentView.addSubview(view1)
         contentView.addSubview(view2)
+        contentView.addSubview(imageView4)
+        contentView.addSubview(imageView5)
+        contentView.addSubview(imageView6)
         contentView.addSubview(view3)
         view1.addSubview(stackView2)
         view1.addSubview(button1)
@@ -138,6 +168,7 @@ class HomeViewController: UIViewController {
         view1.addSubview(imageView1)
         view2.addSubview(stackView4)
         view2.addSubview(imageView3)
+        view3.addSubview(stackView5)
         
         _ = [stackView1, view1].map { contentView.addSubview($0) }
         
@@ -228,12 +259,39 @@ class HomeViewController: UIViewController {
             $0.trailing.equalToSuperview().inset(20)
         }
         
-        view3.snp.makeConstraints {
-            $0.height.equalTo(1100)
+        imageView4.snp.makeConstraints {
+            $0.height.equalTo(220)
             $0.top.equalTo(view2.snp.bottom)
-            $0.leading.trailing.bottom.equalToSuperview()
+            $0.leading.trailing.equalToSuperview().inset(9)
         }
-
+        
+        imageView5.snp.makeConstraints {
+            $0.height.equalTo(210)
+            $0.top.equalTo(imageView4.snp.bottom).offset(14)
+            $0.leading.trailing.equalToSuperview().inset(9.5)
+        }
+        
+        imageView6.snp.makeConstraints {
+            $0.height.equalTo(430)
+            $0.top.equalTo(imageView5.snp.bottom).offset(14)
+            $0.leading.trailing.equalToSuperview().inset(9.5)
+        }
+        
+        view3.snp.makeConstraints {
+            $0.height.equalTo(71.5)
+            $0.top.equalTo(imageView6.snp.bottom)
+            $0.leading.trailing.equalToSuperview().inset(9.5)
+            $0.bottom.equalToSuperview()
+        }
+        
+        [label7, label8].map {
+            stackView5.addArrangedSubview($0)
+        }
+        
+        stackView5.snp.makeConstraints {
+            $0.top.equalToSuperview().inset(33)
+            $0.leading.trailing.equalToSuperview().inset(11)
+        }
     }
 }
 
@@ -243,7 +301,6 @@ struct PreView: PreviewProvider {
     }
 }
 
-#if DEBUG
 extension UIViewController {
     private struct Preview: UIViewControllerRepresentable {
             let viewController: UIViewController
@@ -260,5 +317,4 @@ extension UIViewController {
             Preview(viewController: self)
         }
 }
-#endif
 
