@@ -10,6 +10,7 @@ import SnapKit
 import Then
 
 class CollectionViewCell: UICollectionViewCell {
+    
     static let identifier = "cell"
 
     override init(frame: CGRect) {
