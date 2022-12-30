@@ -304,7 +304,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         }
         
         collectionView.snp.makeConstraints {
-            $0.height.equalTo(230)
+            $0.height.equalTo(250)
             $0.top.equalTo(view3.snp.bottom)
             $0.leading.trailing.bottom.equalToSuperview()
          
