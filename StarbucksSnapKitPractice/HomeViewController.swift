@@ -10,7 +10,7 @@ import SnapKit
 import SwiftUI
 import Then
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     let scrollView = UIScrollView().then {
         $0.showsVerticalScrollIndicator = false
@@ -150,27 +150,38 @@ class HomeViewController: UIViewController {
         $0.text = "See all"
     }
     
+    let collectionView: UICollectionView = {
+        let layout = UICollectionViewLayout()
+        let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        return cv
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .white
         view.addSubview(scrollView)
         scrollView.addSubview(contentView)
+        contentView.addSubview(stackView1)
         contentView.addSubview(view1)
-        contentView.addSubview(view2)
-        contentView.addSubview(imageView4)
-        contentView.addSubview(imageView5)
-        contentView.addSubview(imageView6)
-        contentView.addSubview(view3)
         view1.addSubview(stackView2)
         view1.addSubview(button1)
         view1.addSubview(stackView3)
         view1.addSubview(imageView1)
+        contentView.addSubview(view2)
         view2.addSubview(stackView4)
         view2.addSubview(imageView3)
+        contentView.addSubview(imageView4)
+        contentView.addSubview(imageView5)
+        contentView.addSubview(imageView6)
+        contentView.addSubview(view3)
         view3.addSubview(stackView5)
-        
-        _ = [stackView1, view1].map { contentView.addSubview($0) }
+        contentView.addSubview(collectionView)
+  
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.register(CollectionViewCell.self, forCellWithReuseIdentifier: CollectionViewCell.identifier)
+        collectionView.collectionViewLayout = createLayout()
         
         scrollView.snp.makeConstraints {
             $0.top.equalTo(view.safeAreaLayoutGuide)
@@ -281,7 +292,6 @@ class HomeViewController: UIViewController {
             $0.height.equalTo(71.5)
             $0.top.equalTo(imageView6.snp.bottom)
             $0.leading.trailing.equalToSuperview().inset(9.5)
-            $0.bottom.equalToSuperview()
         }
         
         [label7, label8].map {
@@ -290,8 +300,47 @@ class HomeViewController: UIViewController {
         
         stackView5.snp.makeConstraints {
             $0.top.equalToSuperview().inset(33)
-            $0.leading.trailing.equalToSuperview().inset(11)
+            $0.leading.trailing.equalToSuperview().inset(9.5)
         }
+        
+        collectionView.snp.makeConstraints {
+            $0.height.equalTo(230)
+            $0.top.equalTo(view3.snp.bottom)
+            $0.leading.trailing.bottom.equalToSuperview()
+         
+        }
+    }
+    
+    func createLayout() -> UICollectionViewCompositionalLayout {
+        
+        // item
+        let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.85)))
+        
+        item.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 6, trailing: 11.5)
+        
+        // Group
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: NSCollectionLayoutSize(widthDimension: .absolute(500), heightDimension: .fractionalHeight(1)), subitem: item, count: 2)
+        
+        // Section
+        let section = NSCollectionLayoutSection(group: group)
+        section.orthogonalScrollingBehavior = .continuous
+        
+        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 18, bottom: 0, trailing: 7)
+        
+        // return
+        return UICollectionViewCompositionalLayout(section: section)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return collections.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.identifier, for: indexPath) as! CollectionViewCell
+        cell.setup(with: collections[indexPath.row])
+
+        return cell
     }
 }
 
